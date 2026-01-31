@@ -15,4 +15,4 @@ First, you need to download the dataset from the public URL. All subsequent exam
 (1) Human DLPFC within the spatialLIBD (http://spatial.libd.org/spatialLIBD);  
 (2) Human breast cancer and mouse brain tissue sections datasets (https://www.10xgenomics.com/resources/datasets);  
 (3)Stereo-seq dataset for mouse olfactory bulb tissue (https://github.com/BGIResearch/stereopy);  
-(4) other datasets from the Spatial Omics DataBase(SODB)(https://gene.ai.tencent.com/SpatialOmics/). 
+(4) other datasets from the Spatial Omics DataBase(SODB) (https://gene.ai.tencent.com/SpatialOmics/). 
