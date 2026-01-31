@@ -1,0 +1,247 @@
+10x:
+  seed: 2025
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  dropout: 0.1
+  smooth_r: 2
+  num_neighbors: 6
+  num_pruning: 1
+  num_clusters: 7
+  epoches: 200
+  fdim: 3000
+  min_cells: 50
+  min_counts: 10
+  nhid: 128
+  out: 64
+  head_num: 4
+  head_dim: 32
+  alpha: 8
+  beta: 0.3
+  gama: 0.7
+10x-1:
+  seed: 2025
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  dropout: 0.1
+  smooth_r: 2
+  num_neighbors: 6
+  num_pruning: 1
+  num_clusters: 5
+  epoches: 200
+  fdim: 3000
+  min_cells: 50
+  min_counts: 10
+  nhid: 128
+  out: 64
+  head_num: 4
+  head_dim: 32
+  alpha: 8
+  beta: 0.3
+  gama: 0.7
+Human_Breast_Cancer:
+  seed: 2025
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  dropout: 0.1
+  smooth_r: 2
+  num_neighbors: 6
+  num_pruning: 1
+  num_clusters: 20
+  epoches: 300
+  fdim: 3000
+  min_cells: 3
+  min_counts: 10
+  nhid: 128
+  out: 64
+  head_num: 4
+  head_dim: 32
+  alpha : 1
+  beta : 0.85
+  gama : 0.15
+
+Stereo_seq:
+  seed: 2025
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  dropout: 0.1
+  smooth_r: 50
+  num_neighbors: 3
+  num_pruning: 1
+  num_clusters: 7
+  epoches: 200
+  fdim: 3000
+  min_cells: 195
+  min_counts: 292
+  nhid: 128
+  out: 64
+  head_num: 4
+  head_dim: 32
+  alpha : 6
+  beta : 0.1
+  gama : 0.9
+
+MERFISH:
+  seed: 2025
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  dropout: 0.1
+  smooth_r: 50
+  num_neighbors: 5
+  num_pruning: 1
+  num_clusters: 11
+  min_cells: 3
+  min_counts: 10
+  epoches: 300
+  fdim: 254
+  nhid: 128
+  out: 64
+  head_num: 4
+  head_dim: 32
+  alpha: 1
+  beta: 0.4
+  gama: 0.6
+
+osmFISH:
+  seed: 2025
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  dropout: 0.1
+  smooth_r: 400
+  num_neighbors: 4
+  num_pruning: 1
+  num_clusters: 11
+  min_cells: 3
+  min_counts: 10
+  epoches: 600
+  fdim: 33
+  nhid: 64
+  out: 32
+  head_num: 4
+  head_dim: 16
+  alpha : 1
+  beta : 0.5
+  gama: 0.5
+
+Slide_seqV2:
+  seed: 2025
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  dropout: 0.1
+  smooth_r: 50
+  num_neighbors: 3
+  num_pruning: 1
+  num_clusters: 14
+  min_cells: 3
+  min_counts: 10
+  epoches: 300
+  fdim: 1933
+  nhid: 128
+  out: 64
+  head_num: 4
+  head_dim: 32
+  alpha : 10
+  beta : 0.3
+  gama : 0.7
+
+Multi_slice:
+  integration_horizontal:
+    seed: 2025
+    learning_rate: 0.001
+    weight_decay: 0.0005
+    dropout: 0.1
+    smooth_r: 2
+    num_neighbors: 6
+    num_pruning: 1
+    num_clusters: 26
+    epoches: 300
+    min_cells: 10
+    min_counts: 10
+    fdim: 3000
+    nhid: 128
+    out: 64
+    head_num: 4
+    head_dim: 32
+    alpha: 7
+    beta: 0.1
+    gama: 0.9
+  MERFISH_integration_vertical:
+    seed: 2025
+    learning_rate: 0.001
+    weight_decay: 0.0005
+    dropout: 0.1
+    smooth_r: 50
+    num_neighbors: 5
+    num_pruning: 1
+    num_clusters: 11
+    epoches: 300
+    min_cells: 3
+    min_counts: 10
+    fdim: 254
+    nhid: 128
+    out: 64
+    head_num: 4
+    head_dim: 32
+    alpha: 1
+    beta: 0.4
+    gama: 0.6
+  10x_integration_vertical:
+    seed: 2025
+    learning_rate: 0.001
+    weight_decay: 0.0005
+    dropout: 0.1
+    smooth_r: 2
+    num_neighbors: 6
+    num_pruning: 1
+    num_clusters: 7
+    epoches: 200
+    min_cells: 50
+    min_counts: 10
+    fdim: 3000
+    nhid: 128
+    out: 64
+    head_num: 4
+    head_dim: 32
+    alpha: 8
+    beta: 0.3
+    gama: 0.7
+  integration_cross_stage:
+    seed: 2025
+    learning_rate: 0.001
+    weight_decay: 0.0005
+    dropout: 0.1
+    smooth_r: 50
+    num_neighbors: 4
+    num_pruning: 1
+    num_clusters: 18
+    epoches: 300
+    min_cells: 3
+    min_counts: 10
+    fdim: 3000
+    nhid: 128
+    out: 64
+    head_num: 4
+    head_dim: 32
+    alpha: 20
+    beta: 0.35
+    gama: 0.65
+
+defualt:
+  seed: 2025
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  dropout: 0.1
+  smooth_r: 50
+  num_neighbors: 5
+  num_pruning: 1
+  num_clusters: 14
+  epoches: 300
+  min_cells: 3
+  min_counts: 10
+  fdim: 3000
+  nhid: 128
+  out: 64
+  head_num: 4
+  head_dim: 32
+  alpha: 20
+  beta: 0.5
+  gama: 0.5
