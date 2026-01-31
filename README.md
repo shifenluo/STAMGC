@@ -3,7 +3,6 @@ STAMGC: A Dual-Contrastive Learning Framework for Spatial Domain Identification 
 
 # Overview
 In this study, we propose STAMGC, a dual-contrastive learning approach based on graph convolutional networks. This method jointly optimizes the model through regional and topological contrastive learning to process ST data, effectively reducing domain noise and enhancing detailed features. Moreover, this study is the first to apply Gaussian smoothing from the image processing field to ST data, providing a novel perspective to address the spatial discontinuity of gene expression signals.We demonstrate the effectiveness of STAMGC across multiple tissue types and technological platforms. In both qualitative and quantitative analyses, STAMGC consistently achieves superior performance. Furthermore, STAMGC not only identifies finer structures in the mouse sagittal brain, formed by stitching together the anterior and posterior brain slices, but also provides new insights for human breast cancer research.
-![image_text](https://github.com/shifenluo/STAMGC/blob/main/STAMGC.tif)
 
 # Requirements
 - Python: 3.8.16
