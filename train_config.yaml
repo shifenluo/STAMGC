@@ -226,22 +226,22 @@ Multi_slice:
     gama: 0.65
 
 defualt:
-  seed: 2025
-  learning_rate: 0.001
-  weight_decay: 0.0005
-  dropout: 0.1
-  smooth_r: 50
-  num_neighbors: 5
-  num_pruning: 1
-  num_clusters: 14
-  epoches: 300
-  min_cells: 3
-  min_counts: 10
-  fdim: 3000
-  nhid: 128
-  out: 64
-  head_num: 4
-  head_dim: 32
-  alpha: 20
-  beta: 0.5
-  gama: 0.5
+  seed: 2025                  # random seed
+  learning_rate: 0.001        # learning rate
+  weight_decay: 0.0005        # weight decay
+  dropout: 0.1                # dropout rate
+  smooth_r: 50                # Gaussian smoothing radius
+  num_neighbors: 5            # KNN neighbors
+  num_pruning: 1              # pruning edges
+  num_clusters: 14            # cluster number
+  epoches: 300                # training epochs
+  min_cells: 3                # expressed cells
+  min_counts: 10              # expression counts
+  fdim: 3000                  # HVG number
+  nhid: 128                   # hidden dimension
+  out: 64                     # latent dimension
+  head_num: 4                 # fusion branches
+  head_dim: 32                # branch dimension
+  alpha: 20                   # reconstruction loss weight
+  beta: 0.5                   # regional contrastive loss weight
+  gama: 0.5                   # topological contrastive loss weight
