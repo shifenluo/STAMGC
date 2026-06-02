@@ -15,7 +15,16 @@ import json
 
 from sklearn.decomposition import PCA
 
+import os
 
+def create_dir(path):
+    """
+    Create directory if it does not exist.
+    """
+    if not os.path.exists(path):
+        os.makedirs(path)
+        print(f"Created directory: {path}")
+    return path
 
 def filter_specialgenes(adata,Gene1Pattern="ERCC",Gene2Pattern="MT-"):
     id_tmp1=np.asarray([not str(name).upper().startswith(Gene1Pattern) for name in adata.var_names],dtype=bool)
