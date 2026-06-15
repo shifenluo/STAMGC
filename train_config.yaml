@@ -201,8 +201,8 @@ Multi_slice:
     smooth_r: 2
     num_neighbors: 6
     num_pruning: 1
-    num_clusters: 7
-    pseudo_num: 7
+    num_clusters: 5
+    pseudo_num: 5
     epoches: 200
     min_cells: 50
     min_counts: 10
