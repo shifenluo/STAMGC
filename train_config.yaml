@@ -7,6 +7,7 @@
   num_neighbors: 6
   num_pruning: 1
   num_clusters: 7
+  pseudo_num: 7
   epoches: 200
   fdim: 3000
   min_cells: 50
@@ -27,6 +28,7 @@
   num_neighbors: 6
   num_pruning: 1
   num_clusters: 5
+  pseudo_num: 5
   epoches: 200
   fdim: 3000
   min_cells: 50
@@ -47,6 +49,7 @@ Human_Breast_Cancer:
   num_neighbors: 6
   num_pruning: 1
   num_clusters: 20
+  pseudo_num: 20
   epoches: 300
   fdim: 3000
   min_cells: 3
@@ -68,6 +71,7 @@ Stereo_seq:
   num_neighbors: 3
   num_pruning: 1
   num_clusters: 7
+  pseudo_num: 7
   epoches: 200
   fdim: 3000
   min_cells: 195
@@ -89,6 +93,7 @@ MERFISH:
   num_neighbors: 5
   num_pruning: 1
   num_clusters: 11
+  pseudo_num: 11
   min_cells: 3
   min_counts: 10
   epoches: 300
@@ -110,6 +115,7 @@ osmFISH:
   num_neighbors: 4
   num_pruning: 1
   num_clusters: 11
+  pseudo_num: 11
   min_cells: 3
   min_counts: 10
   epoches: 600
@@ -131,6 +137,7 @@ Slide_seqV2:
   num_neighbors: 3
   num_pruning: 1
   num_clusters: 14
+  pseudo_num: 14
   min_cells: 3
   min_counts: 10
   epoches: 300
@@ -153,6 +160,7 @@ Multi_slice:
     num_neighbors: 6
     num_pruning: 1
     num_clusters: 26
+    pseudo_num: 26
     epoches: 300
     min_cells: 10
     min_counts: 10
@@ -173,6 +181,7 @@ Multi_slice:
     num_neighbors: 5
     num_pruning: 1
     num_clusters: 11
+    pseudo_num: 11
     epoches: 300
     min_cells: 3
     min_counts: 10
@@ -193,6 +202,7 @@ Multi_slice:
     num_neighbors: 6
     num_pruning: 1
     num_clusters: 7
+    pseudo_num: 7
     epoches: 200
     min_cells: 50
     min_counts: 10
@@ -213,6 +223,7 @@ Multi_slice:
     num_neighbors: 4
     num_pruning: 1
     num_clusters: 18
+    pseudo_num: 18
     epoches: 300
     min_cells: 3
     min_counts: 10
@@ -234,6 +245,7 @@ defualt:
   num_neighbors: 5            # KNN neighbors
   num_pruning: 1              # pruning edges
   num_clusters: 14            # cluster number
+  pseudo_num: 14              # pseudo labels number
   epoches: 300                # training epochs
   min_cells: 3                # expressed cells
   min_counts: 10              # expression counts
@@ -242,6 +254,6 @@ defualt:
   out: 64                     # latent dimension
   head_num: 4                 # fusion branches
   head_dim: 32                # branch dimension
-  alpha: 20                   # reconstruction loss weight
+  alpha: 1                    # reconstruction loss weight
   beta: 0.5                   # regional contrastive loss weight
   gama: 0.5                   # topological contrastive loss weight
