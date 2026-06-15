@@ -280,6 +280,7 @@ class LoadBatchAdata:
         else:
             self.adata.uns['smooth_r'] = self.smooth_r
         self.adata=gaussian_smooth_data(self.adata)
+        # self.adata.obsm['smooth_gene']=self.adata.obsm['gene_feat']#no-Guassian ablation
 
         adj_list=[]
         for slice in self.slice_list:
