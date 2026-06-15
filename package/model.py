@@ -71,6 +71,7 @@ class model(torch.nn.Module):
 
         mhp=self.mhp(z)
         h=F.relu(self.decoder(z, edge_index))
+        # h=F.relu(self.decoder(mhp, edge_index))#reconstruction_MLPfusion ablation
 
 
         return z,mhp,h
@@ -145,6 +146,7 @@ class STAMGC(nn.Module):
             reconstitution_loss=mse_loss(h,features)
 
             contrast_loss1=self.contrastive_loss1(z, graph_neigh,pseudo_labels)
+            # contrast_loss1=self.contrastive_loss1(mhp, graph_neigh,pseudo_labels)#regional_MLPfusion ablation
 
             sim=self.sim(mhp,mhp)
             # sim=self.sim(z,z)
