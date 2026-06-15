@@ -93,6 +93,7 @@ class STAMGC(nn.Module):
         self.path3=path3
         self.cluster_method=cluster_method
         self.num_clusters = config['num_clusters']
+        self.pseudo_num=config['pseudo_num']
         self.label = args.label
         self.platform=args.platform
         self.spot_size=args.spot_size
@@ -120,7 +121,7 @@ class STAMGC(nn.Module):
             self.adata.obs['pseudo_labels'] =np.load('./results/' + self.path1 + '/' + self.path2+self.path3 + '/pseudo_labels.npy')
         else:
             # clustering(self.adata,self.num_clusters,'smooth_gene',self.cluster_method,'pseudo_labels')
-            self.adata.obs['pseudo_labels']=generate_pseudo_labels(self.adata.obsm['smooth_gene'],self.num_clusters)
+            self.adata.obs['pseudo_labels']=generate_pseudo_labels(self.adata.obsm['smooth_gene'],self.pseudo_num)
             np.save('./results/' + self.path1 + '/' + self.path2 +self.path3+ '/pseudo_labels.npy',self.adata.obs['pseudo_labels'])
         draw_spatial_domain(self.adata,'pseudo_labels','pseudo labels','pseudo_labels',self.platform,self.batch_size,self.spot_size,self.path1,self.path2,self.path3,cmap='magma')
 
